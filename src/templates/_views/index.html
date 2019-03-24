@@ -3,11 +3,98 @@
 Index | {{ super() }}
 {% endblock %}
 {% block content %}
-<div class="container">
+<div class="container-fluid">
+  <div class="row border">
 
 
-  
-  
-  
+    <div class="col-xl-2 col-md-3 border">
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action list-group-item-dark">
+            Home
+          </a>
+          <a href="#" class="list-group-item list-group-item-action ">
+            Blog
+          </a>
+          <a href="#" class="list-group-item list-group-item-action ">
+            About
+          </a>
+        </div>
+    
+    </div>
+
+
+    <div class="col-xl-7 col-md-9">
+
+    <!--  -->
+      <div class="container">
+        <div class="card-deck">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="p1">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+          <div class="card">
+            <img src="..." class="card-img-top" alt="p2">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+          <div class="card">
+            <img src="..." class="card-img-top" alt="p3">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="row card text-center">
+        <div class="card-header">
+          Featured
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        <div class="card-footer text-muted">
+          2 days ago
+        </div>
+      </div>
+
+      <div class="row card text-center">
+          <div class="card-header">
+            Featured
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+          <div class="card-footer text-muted">
+            2 days ago
+          </div>
+        </div>
+
+
+    </div>
+
+
+
+
+  </div>
 </div>
 {% endblock %}
