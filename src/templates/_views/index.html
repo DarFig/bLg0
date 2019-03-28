@@ -15,7 +15,7 @@ Index | {{ super() }}
           <a href="{{ url_for('blog') }}" class="list-group-item list-group-item-action ">
             Blog
           </a>
-          <a href="#" class="list-group-item list-group-item-action ">
+          <a href="{{ url_for('about') }}" class="list-group-item list-group-item-action ">
             About
           </a>
         </div>
@@ -24,7 +24,7 @@ Index | {{ super() }}
 
 
     <div class="m-2 col-xl-7 col-md-8 border border-success">
-
+    
     <!--  -->
       <div class="jumbotron">
         <div class="card-deck">
@@ -61,6 +61,9 @@ Index | {{ super() }}
         </div>
       </div>
       <!--  -->
+      <div class="m-2 text-center text-success">
+          <h3>Últimas entradas</h3>
+      </div>
       <div class="mb-5">
         <div class="card text-white text-center">
           <div class="card-header">

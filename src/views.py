@@ -4,6 +4,7 @@ from flask import render_template
 
 
 from .controladores.blog import *
+from .controladores.about import *
 
 
 @app.route('/')
