@@ -3,13 +3,13 @@
 Index | {{ super() }}
 {% endblock %}
 {% block content %}
-<div class="container-fluid">
-  <div class="row border">
+<div class="container-fluid"> 
+  <div class="row">
 
 
-    <div class="m-2 col-xl-2 col-md-3 border">
+    <div class="m-2 col-xl-2 col-md-3 border border-success">
         <div class="m-2 list-group">
-          <a href="#" class="list-group-item list-group-item-action list-group-item-dark">
+          <a href="{{ url_for('index') }}" class="list-group-item list-group-item-action list-group-item-success">
             Home
           </a>
           <a href="#" class="list-group-item list-group-item-action ">
@@ -23,12 +23,12 @@ Index | {{ super() }}
     </div>
 
 
-    <div class="m-2 col-xl-7 col-md-8">
+    <div class="m-2 col-xl-7 col-md-8 border border-success">
 
     <!--  -->
       <div class="jumbotron">
         <div class="card-deck">
-          <div class="card">
+          <div class="card text-white bg-secondary">
             <img src="..." class="card-img-top" alt="p1">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -38,7 +38,7 @@ Index | {{ super() }}
               <small class="text-muted">Last updated 3 mins ago</small>
             </div>
           </div>
-          <div class="card">
+          <div class="card text-white bg-secondary">
             <img src="..." class="card-img-top" alt="p2">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -48,7 +48,7 @@ Index | {{ super() }}
               <small class="text-muted">Last updated 3 mins ago</small>
             </div>
           </div>
-          <div class="card">
+          <div class="card text-white bg-secondary">
             <img src="..." class="card-img-top" alt="p3">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -62,7 +62,7 @@ Index | {{ super() }}
       </div>
       <!--  -->
       <div class="mb-5">
-        <div class="card text-center">
+        <div class="card text-white text-center">
           <div class="card-header">
             Featured
           </div>
@@ -77,7 +77,7 @@ Index | {{ super() }}
         </div>
       </div>
       <div class="mb-5">
-        <div class="card text-center">
+        <div class="card text-white text-center">
           <div class="card-header">
             Featured
           </div>
