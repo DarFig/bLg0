@@ -1,0 +1,61 @@
+{% extends "_layouts/base.html" %}
+{% block title %}
+Blog | {{ super() }}
+{% endblock %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="m-2 col-xl-2 col-md-3 border border-success">
+                <div class="m-2 list-group">
+                    <a href="{{ url_for('index') }}" class="list-group-item list-group-item-action ">
+                    Home
+                    </a>
+                    <a href="{{ url_for('blog') }}" class="list-group-item list-group-item-action list-group-item-success">
+                    Blog
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action ">
+                    About
+                    </a>
+                </div>
+            
+            </div>
+
+
+    
+
+        <div class="m-2 col-xl-7 col-md-8 border border-success">
+            <div class="mb-5">
+                <div class="card text-white text-center">
+                    <div class="card-header">
+                    Featured
+                    </div>
+                    <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    
+                    </div>
+                    <div class="card-footer text-muted">
+                    2 days ago
+                    </div>
+                </div>
+                </div>
+                <div class="mb-5">
+                <div class="card text-white text-center">
+                    <div class="card-header">
+                    Featured
+                    </div>
+                    <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    
+                    </div>
+                    <div class="card-footer text-muted">
+                    2 days ago
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

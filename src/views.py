@@ -2,6 +2,10 @@
 from src import app
 from flask import render_template
 
+
+from .controladores.blog import *
+
+
 @app.route('/')
 @app.route('/', methods=['GET'])
 def index():
