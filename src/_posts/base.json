@@ -1,0 +1,21 @@
+{
+    "header":{
+        "title":"",
+        "tags":[],
+        "references":""
+    },
+    "body":{
+        "intro":{
+            "title":"",
+            "text":""
+        },
+        "body":{
+            "title":"",
+            "text":""
+        }
+    },
+    "footer":{
+        "label":""
+    }
+
+}
