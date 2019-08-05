@@ -2,9 +2,12 @@
 
 from src import app
 from flask import render_template
+from ..interpreter import get_content_from_pk
 
 
 @app.route('/post', methods=['GET'])
-def post():
+@app.route('/post/<int:pk>', methods=['GET'])
+def post(pk=20190805):
     title = "BLG0"
-    return render_template('_views/post.html',webTitle=title)
+    post = get_content_from_pk(pk)
+    return render_template('_views/post.html',webTitle=title, post=post)

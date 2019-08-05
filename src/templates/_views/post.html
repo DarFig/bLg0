@@ -25,12 +25,19 @@ Post | {{ super() }}
             </div>
             <div class="m-2 card text-white text-center">
                 <div class="start2p card-header">
-                    Nombre X
+                    {{ post["header"]["title"] }}
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    
+                    <div>
+                        <h5 class="card-title">{{ post["body"]["intro"]["title"] }}</h5>
+                        <p class="card-text">{{ post["body"]["intro"]["text"] }}</p>
+                        <br>
+                    </div>
+                    <div>
+                        <h5 class="card-title">{{ post["body"]["body"]["title"] }}</h5>
+                        <p class="card-text">{{ post["body"]["body"]["text"] }}</p>
+                        <br>
+                    </div>
                 </div>
                 <div class="card-footer text-muted">
                     2 days ago

@@ -1,0 +1,22 @@
+{
+    "header":{
+        "pk":20190805,
+        "title":"Prueba",
+        "tags":["prueba"],
+        "references":"http://prueba.prueba"
+    },
+    "body":{
+        "intro":{
+            "title":"Introducción",
+            "text":"asda a adda faf ds fdsf sfs sdf sfdsfsdsd "
+        },
+        "body":{
+            "title":"Cuerpo",
+            "text":"asda adaadsfs s sssdsssd s asddasdad asdad sfsfsdfsdfssfsdfsfddsdsf s"
+        }
+    },
+    "footer":{
+        "label":"saludos"
+    }
+
+}
