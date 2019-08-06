@@ -5,7 +5,7 @@ import os
 
 
 def get_all_pk_posts()->list:
-    return os.listdir(Configure.folder())
+    return os.listdir(Configure.post_folder())
     
 
 def get_all_posts()->list:
@@ -18,7 +18,7 @@ def get_all_posts()->list:
 
 def get_content_from_pk(pk:str)->dict:
     answer = {}
-    with open(Configure.folder() + str(pk).replace('.json','')+".json", 'r') as content:
+    with open(Configure.post_folder() + str(pk).replace('.json','')+".json", 'r') as content:
         answer = eval(content.read())
         return answer
 
@@ -26,9 +26,12 @@ def get_content_from_pk(pk:str)->dict:
 class Configure:
 
     @staticmethod
-    def folder():
+    def post_folder():
         return "src/_posts/" 
 
+    @staticmethod
+    def proy_folder():
+        return "src/_proy/"
 
     @staticmethod
     def header()->list:
