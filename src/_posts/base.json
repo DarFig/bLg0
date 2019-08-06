@@ -10,10 +10,10 @@
             "title":"",
             "text":""
         },
-        "body":{
+        "body":[{
             "title":"",
             "text":""
-        }
+        }]
     },
     "footer":{
         "label":""

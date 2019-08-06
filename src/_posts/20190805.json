@@ -10,10 +10,15 @@
             "title":"Introducción",
             "text":"asda a adda faf ds fdsf sfs sdf sfdsfsdsd "
         },
-        "body":{
+        "body":[{
             "title":"Cuerpo",
             "text":"asda adaadsfs s sssdsssd s asddasdad asdad sfsfsdfsdfssfsdfsfddsdsf s"
+        },
+        {
+            "title":"Cuerpo2",
+            "text":"asda adaadsfs s sssdsssd s asddasdad asdad sfsfsdfsdfssfsdfsfddsdsf s"
         }
+        ]
     },
     "footer":{
         "label":"saludos"
