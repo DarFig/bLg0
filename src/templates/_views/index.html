@@ -25,82 +25,46 @@ Index | {{ super() }}
 
     <div class="m-2 col-xl-7 col-md-8 border border-success" >
     
-    <!--  -->
+    <!-- Proy -->
       <div class="jumbotron">
         <div class="card-deck">
+          {% for item in proys %}
           <div class="card text-white bg-secondary" >
-            <img src="..." class="card-img-top" alt="p1">
+            <img src="..." class="card-img-top text-center" alt={{ item["header"]["pk"] }}>
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text" >This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h5 class="start2p card-title">{{ item["header"]["title"] }}</h5>
+              <p class="card-text" ><h5>{{ item["body"]["intro"]["title"]}}</h5> <br> 
+                {{ item["body"]["intro"]["text"] }} </p>
             </div>
             <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
+              <small class="text-muted">{{ item["footer"]["label"] }}</small>
             </div>
           </div>
-          <div class="card text-white bg-secondary">
-            <img src="..." class="card-img-top" alt="p2">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
-            </div>
-          </div>
-          <div class="card text-white bg-secondary">
-            <img src="..." class="card-img-top" alt="p3">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
-            </div>
-          </div>
+          {% endfor %}
         </div>
       </div>
-      <!--  -->
+      <!-- Post prevw -->
       <div class="m-2 text-center text-success">
           <h3 class="start2p">Últimas entradas</h3>
       </div>
+      {% for item in posts %}
       <div class="mb-5">
         <div class="card text-white text-center">
           <div class="start2p card-header">
-            Featured
+            {{ item["header"]["title"] }}
           </div>
           <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="{{ url_for('post') }}">Continuar</a>
+            <h5 class="card-title">{{ item["body"]["intro"]["title"] }}</h5>
+            <p class="card-text">{{ item["body"]["intro"]["text"] }}</p>
+            <a href="{{ url_for('post', pk=item["header"]["pk"]) }}">Continuar</a>
           </div>
           <div class="card-footer text-muted">
-            2 days ago
+            {{ item["footer"]["label"] }}
           </div>
         </div>
       </div>
-      <div class="mb-5">
-        <div class="card text-white text-center">
-          <div class="start2p card-header">
-            Featured
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="{{ url_for('post') }}">Continuar</a>
-          </div>
-          <div class="card-footer text-muted">
-            2 days ago
-          </div>
-        </div>
-      </div>
-     
-
-
+      {% endfor %}
     </div>
-
-
-
 
   </div>
 </div>

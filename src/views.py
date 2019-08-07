@@ -8,8 +8,16 @@ from .controladores.about import *
 from .controladores.post import *
 
 
+from .interpreter import get_all_proy, get_all_posts
+
 @app.route('/')
 @app.route('/', methods=['GET'])
 def index():
     title = "BLG0"
-    return render_template('_views/index.html',webTitle=title)
+    proys = get_all_proy(limit=3)
+    posts = get_all_posts(limit=3)
+    return render_template('_views/index.html',webTitle=title, proys=proys, posts=posts)
+
+
+
+

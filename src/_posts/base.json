@@ -3,7 +3,10 @@
         "pk":0,
         "title":"",
         "tags":[],
-        "references":""
+        "references":[{
+            "label":"",
+            "url":""
+        }]
     },
     "body":{
         "intro":{
@@ -11,6 +14,7 @@
             "text":""
         },
         "body":[{
+            "type":"",
             "title":"",
             "text":""
         }]

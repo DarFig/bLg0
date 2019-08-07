@@ -27,36 +27,27 @@ Blog | {{ super() }}
             <div class="m-2 text-center text-success">
                 <h3 class="start2p"> Entradas</h3>
             </div>
+            {% for item in posts %}
             <div class="mb-5">
                 <div class="card text-white text-center">
                     <div class="start2p card-header">
-                    Featured
+                        {{ item["header"]["title"] }}
                     </div>
                     <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="{{ url_for('post') }}">Continuar</a>
+                    <h5 class="card-title">{{ item["body"]["intro"]["title"] }}</h5>
+                    <p class="card-text">{{ item["body"]["intro"]["text"] }}</p>
+                    <h6 class="card-title">{{ item["body"]["body"][0]["title"] }}</h6>
+                    <p class="card-text">{{ item["body"]["body"][0]["text"] }}</p>
+                    
+                    <a href="{{ url_for('post', pk=item["header"]["pk"]) }}">Continuar</a>
                     </div>
                     <div class="card-footer text-muted">
-                    2 days ago
-                    </div>
-                </div>
-                </div>
-                <div class="mb-5">
-                <div class="card text-white text-center">
-                    <div class="start2p card-header">
-                    Featured
-                    </div>
-                    <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="{{ url_for('post') }}">Continuar</a>
-                    </div>
-                    <div class="card-footer text-muted">
-                    2 days ago
+                        {{ item["label"] }}
                     </div>
                 </div>
             </div>
+            {% endfor %}
+        
         </div>
     </div>
 </div>

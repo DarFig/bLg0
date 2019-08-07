@@ -1,0 +1,29 @@
+{
+    "header":{
+       "pk":0,
+       "title":"Prueba",
+       "tags":[""],
+       "references":[
+          {
+             "label":"",
+             "url":""
+          }
+       ]
+    },
+    "body":{
+       "intro":{
+          "title":"Asdadad sad adas ",
+          "text":"ddd ad a a das dad asd ddd ad a a das dad asd ddd ad a a das dad asdddd ad a a das dad asd ddd ad a a das dad asd"
+       },
+       "body":[
+          {
+             "type":"",
+             "title":"mggmmg gmgmgmgmgmgmgm ",
+             "text":"gmg g mgmgg  ffrheert ht"
+          }
+       ]
+    },
+    "footer":{
+       "label":"foo asdad asada"
+    }
+ }
