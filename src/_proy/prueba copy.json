@@ -1,6 +1,7 @@
 {
     "header":{
        "pk":0,
+       "img":"static/img/coin128.png",
        "title":"Prueba",
        "tags":[""],
        "references":[
