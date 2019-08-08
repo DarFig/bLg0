@@ -14,7 +14,7 @@ def get_all_posts(limit:int=0)->list:
     answer = []
     pks = get_all_pk_posts()
     for pk in pks:
-        if "base" not in pk:
+        if "base" not in pk and "about" not in pk:
             answer.append(get_content_from_pk(pk))
             limit-=1
             if limit is 0:

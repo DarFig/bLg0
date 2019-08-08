@@ -1,7 +1,7 @@
 {
     "header":{
         "pk":0,
-        "title":"",
+        "title":"Acerca de",
         "tags":[],
         "references":[{
             "label":"",
@@ -10,18 +10,17 @@
     },
     "body":{
         "intro":{
-            "title":"",
-            "text":""
+            "title":"adsadadsa",
+            "text":"adadsadas"
         },
         "body":[{
             "type":"",
-            "title":"",
-            "text":"",
-            "img":""
+            "title":"asdadasd",
+            "text":"asdadsad"
         }]
     },
     "footer":{
-        "label":""
+        "label":"fin"
     }
 
 }
