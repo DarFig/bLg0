@@ -9,4 +9,14 @@
     font-family: 'Fira Code', monospace;
 }
 
+.iconsP {
+    height:64px;
+    width: 64px;
 
+}
+
+.imgP {
+    height:128px;
+    width: 128px; 
+    margin-left: 20px;
+}
