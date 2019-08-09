@@ -20,3 +20,48 @@
     width: 128px; 
     margin-left: 20px;
 }
+
+.negro{
+    background-color: #2d2d2d;
+}
+ 
+ .grisOscuro{
+    background-color: #777c85;
+}
+.grisClaro{
+    background-color: #b3b9c5;
+}
+.blanco{
+    background-color: #ffffff;
+}
+.rojo{
+    background-color: #f2777a;
+}
+.naranja{
+    background-color: #fca369;
+}
+.amarillo{
+    background-color: #ffd479;
+}
+.amarilloClaro{
+    background-color:#ffeea6; 
+}
+.verde{
+    background-color: #92d192;
+}
+.azul{
+    background-color:#6AB0F3; 
+}
+.azulClaro{
+    background-color:#76d4d6; 
+}
+.purpura{
+    background-color:#e1a6f2; 
+}
+.marron{
+    background-color:#ac8d58; 
+}
+
+.textoVerde{
+    color: #92d192;
+}

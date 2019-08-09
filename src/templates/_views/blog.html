@@ -4,32 +4,31 @@ Blog | {{ super() }}
 {% endblock %}
 {% block content %}
 <div class="sourceCode container-fluid">
-    <div class="columns">
-        <div class="column is-narrow menu">
+    <div class=" columns ">
+        <div class="grisOscuro column is-narrow menu ">
             <div class="start2p  column is-12 menu-list">
                 <a href="{{ url_for('index') }}" class="">
-                    <img src="static/img/disk.png" class="iconsP" alt="">Home 
+                    <img src="static/img/disk.png" class="iconsP" alt=""><span class="textoVerde start2p">Home</span>  
                 </a>
-                <a href="{{ url_for('blog') }}" class="is-active">
-                    <img src="static/img/paper.png" class="iconsP" alt="">Blog
+                <a href="{{ url_for('blog') }}" class="naranja">
+                    <img src="static/img/paper.png" class="iconsP" alt=""><span class="textoVerde start2p">Blog</span>  
                 </a>
                 <a href="{{ url_for('about') }}" class="">
-                    <img src="static/img/gosht.png" class="iconsP" alt="">About
+                    <img src="static/img/gosht.png" class="iconsP" alt=""><span class="textoVerde start2p">About</span>
                 </a>
             </div>
-            
+                
         </div>
-
 
     
         
-        <div class="column is-8 ">
-            <div class="column is-offset-4">
-                <h3 class="start2p title is-4">Entradas</h3>
+        <div class=" column is-8 ">
+            <div class=" column is-offset-4">
+                <h3 class="textoVerde start2p title is-5">Entradas</h3>
             </div>
             {% for item in posts %}
             <div class="column">
-                <div class="card">
+                <div class="card grisClaro">
                     <div class="start2p card-header">
                         <p class="card-header-title is-centered">
                         {{ item["header"]["title"] }}

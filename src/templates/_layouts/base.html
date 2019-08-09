@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="grisOscuro">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="witdth=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
@@ -17,13 +17,13 @@
   <link href="static/css/style.css" rel="stylesheet">
   {% endblock %}
 </head>
-<body  class="">
+<body  class="grisOscuro">
   {% include "_modules/nav.html" %}
   {% include "_modules/notifications.html" %}
   {% block content %}
   <h1></h1>
   {% endblock %}
-  <footer class="">
+  <footer class="grisOscuro">
     {% include "_modules/footer.html" %}
     {% block js %}
     <!--script>src="static/js/jquery-3.3.1.min.js"</script-->
@@ -32,4 +32,5 @@
     {% endblock %}
   </footer>
 </body>
+
 </html>

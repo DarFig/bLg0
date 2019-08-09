@@ -10,29 +10,31 @@ Index | {{ super() }}
 
     <div class="column is-narrow menu">
       <div class="start2p  column is-12 menu-list">
-        <a href="{{ url_for('index') }}" class="is-active">
-          <img src="static/img/disk.png" class="iconsP" alt="">Home
-        </a> 
+        <a href="{{ url_for('index') }}" class="naranja">
+            <img src="static/img/disk.png" class="iconsP" alt=""><span class="textoVerde start2p">Home</span>  
+        </a>
         <a href="{{ url_for('blog') }}" class="">
-          <img src="static/img/paper.png" class="iconsP" alt="">Blog 
+            <img src="static/img/paper.png" class="iconsP" alt=""><span class="textoVerde start2p">Blog</span>  
         </a>
-        <a href="{{ url_for('about') }}" class=" ">
-          <img src="static/img/gosht.png" class="iconsP" alt="">About 
-        </a>
+        <a href="{{ url_for('about') }}" class="">
+            <img src="static/img/gosht.png" class="iconsP" alt=""><span class="textoVerde start2p">About</span>
+          </a>
       </div>
-    
+        
     </div>
 
     
     <div class="column is-8 " >
-    
+      <div class=" column is-offset-4">
+          <h3 class="textoVerde start2p title is-5"></h3>
+      </div>
     <!-- Proy -->
       <div class="columns">
         
         {% for item in proys %}
         <div class="column">
             
-          <div class="card" >
+          <div class="card grisClaro" >
             <div class="card-image">
                 <img src={{ item["header"]["img"] }} class="imgP card-img-top text-center" alt={{ item["header"]["pk"] }}>
             </div>
@@ -55,12 +57,12 @@ Index | {{ super() }}
       </div>
 
       <!-- Post prevw -->
-      <div class="column is-offset-one-quarter">
-          <h3 class="start2p title is-4">Últimas entradas</h3>
+      <div class="column is-offset-4">
+          <h3 class="textoVerde start2p title is-3">Últimas entradas</h3>
       </div>
       {% for item in posts %}
       <div class="column">
-        <div class="card">
+        <div class="card grisClaro">
           <div class="start2p card-header">
             <p class="card-header-title is-centered">
                 {{ item["header"]["title"] }}
