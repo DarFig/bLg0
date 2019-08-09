@@ -4,44 +4,47 @@ About | {{ super() }}
 {% endblock %}
 {% block content %}
 <div class="sourceCode container-fluid">
-    <div class="row">
-        <div class="m-2 col-xl-2 col-md-3 border border-success">
-            <div class="start2p m-2 list-group">
-                <a href="{{ url_for('index') }}" class="list-group-item list-group-item-action ">
+    <div class="columns">
+        <div class="column is-narrow menu">
+            <div class="start2p  column is-12 menu-list">
+                <a href="{{ url_for('index') }}" class=" ">
                     <img src="static/img/disk.png" class="iconsP" alt="">Home  
                 </a>
-                <a href="{{ url_for('blog') }}" class="list-group-item list-group-item-action ">
+                <a href="{{ url_for('blog') }}" class="">
                     <img src="static/img/paper.png" class="iconsP" alt="">Blog 
                 </a>
-                <a href="{{ url_for('about') }}" class="list-group-item list-group-item-action list-group-item-success">
+                <a href="{{ url_for('about') }}" class="is-active">
                     <img src="static/img/gosht.png" class="iconsP" alt="">About
                 </a>
             </div>
             
         </div>
         
-        <div class="m-2 col-xl-7 col-md-8 border border-success">
-            <div class="m-2 text-center text-success">
-                <h3 class="start2p">About</h3>
+        <div class="column is-8">
+            <div class="column is-offset-4">
+                <h3 class="start2p title is-4">About</h3>
             </div>
-            <div class="m-2 card text-white text-center">
+            <div class="column card">
                 <div class="start2p card-header">
+                     <p class="card-header-title">
                     {{ about["header"]["title"] }}
-                    
+                    </p>
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title">{{ about["body"]["intro"]["title"] }}</h5>
-                    <p class="card-text">{{ about["body"]["intro"]["text"] }}</p>  
-                    <br>
-                </div>
-                {% for item in about["body"]["body"] %}
-                <div>
-                    <h5 class="card-title">{{ item["title"] }}</h5>
-                    <p class="card-text">{{ item["text"] }}</p>
-                    <br>
+                <div class="card-content">
+                    <div class="">
+                        <h5 class="title is-6">{{ about["body"]["intro"]["title"] }}</h5>
+                        <p class="content">{{ about["body"]["intro"]["text"] }}</p>  
+                        <br>
+                    </div>
+                    {% for item in about["body"]["body"] %}
+                    <div>
+                        <h5 class="title is-7">{{ item["title"] }}</h5>
+                        <p class="content">{{ item["text"] }}</p>
+                        <br>
+                    </div>
                 </div>
                 {% endfor %}
-                <div class="card-footer text-muted">
+                <div class="card-footer">
                     {{ about["footer"]["label"] }}
                 </div>
             </div>

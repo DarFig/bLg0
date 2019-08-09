@@ -4,16 +4,16 @@ Blog | {{ super() }}
 {% endblock %}
 {% block content %}
 <div class="sourceCode container-fluid">
-    <div class="row">
-        <div class="m-2 col-xl-2 col-md-3 border border-success">
-            <div class="start2p m-2 list-group">
-                <a href="{{ url_for('index') }}" class="list-group-item list-group-item-action ">
+    <div class="columns">
+        <div class="column is-narrow menu">
+            <div class="start2p  column is-12 menu-list">
+                <a href="{{ url_for('index') }}" class="">
                     <img src="static/img/disk.png" class="iconsP" alt="">Home 
                 </a>
-                <a href="{{ url_for('blog') }}" class="list-group-item list-group-item-action list-group-item-success">
+                <a href="{{ url_for('blog') }}" class="is-active">
                     <img src="static/img/paper.png" class="iconsP" alt="">Blog
                 </a>
-                <a href="{{ url_for('about') }}" class="list-group-item list-group-item-action ">
+                <a href="{{ url_for('about') }}" class="">
                     <img src="static/img/gosht.png" class="iconsP" alt="">About
                 </a>
             </div>
@@ -23,26 +23,29 @@ Blog | {{ super() }}
 
     
         
-        <div class="m-2 col-xl-7 col-md-8 border border-success">
-            <div class="m-2 text-center text-success">
-                <h3 class="start2p"> Entradas</h3>
+        <div class="column is-8 ">
+            <div class="column is-offset-4">
+                <h3 class="start2p title is-4">Entradas</h3>
             </div>
             {% for item in posts %}
-            <div class="mb-5">
-                <div class="card text-white text-center">
+            <div class="column">
+                <div class="card">
                     <div class="start2p card-header">
+                        <p class="card-header-title">
                         {{ item["header"]["title"] }}
+                        </p>
                     </div>
-                    <div class="card-body">
-                    <h5 class="card-title">{{ item["body"]["intro"]["title"] }}</h5>
-                    <p class="card-text">{{ item["body"]["intro"]["text"] }}</p>
-                    <h6 class="card-title">{{ item["body"]["body"][0]["title"] }}</h6>
-                    <p class="card-text">{{ item["body"]["body"][0]["text"] }}</p>
+                    <div class="card-content">
+                    
+                    <h5 class="title is-6">{{ item["body"]["intro"]["title"] }}</h5>
+                    <p class="content">{{ item["body"]["intro"]["text"] }}</p>
+                    <h6 class="title is-7">{{ item["body"]["body"][0]["title"] }}</h6>
+                    <p class="content">{{ item["body"]["body"][0]["text"] }}</p>
                     
                     <a href="{{ url_for('post', pk=item["header"]["pk"]) }}">Continuar</a>
                     </div>
-                    <div class="card-footer text-muted">
-                        {{ item["label"] }}
+                    <div class="card-footer">
+                        {{ item["footer"]["label"] }}
                     </div>
                 </div>
             </div>

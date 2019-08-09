@@ -10,24 +10,25 @@
   <title>{% block title %}{{webTitle}}{% endblock %}</title>
   {% block css %}
   <!--link href="static/css/bootstrap.min.css" rel="stylesheet"-->
-  <link href="static/css/bootstrap.superhero.min.css" rel="stylesheet">
-  <link href="static/css/bootstrap-grid.min.css" rel="stylesheet">
-  <link href="static/css/bootstrap-reboot.min.css" rel="stylesheet">
+  <!--link href="static/css/bootstrap.superhero.min.css" rel="stylesheet"-->
+  <!--link href="static/css/bootstrap-grid.min.css" rel="stylesheet"-->
+  <!--link href="static/css/bootstrap-reboot.min.css" rel="stylesheet"-->
+  <link href="static/css/bulma.min.css" rel="stylesheet">
   <link href="static/css/style.css" rel="stylesheet">
   {% endblock %}
 </head>
-<body  class="bg-secondary">
+<body  class="">
   {% include "_modules/nav.html" %}
   {% include "_modules/notifications.html" %}
   {% block content %}
   <h1></h1>
   {% endblock %}
-  <footer class=" border-success">
+  <footer class="">
     {% include "_modules/footer.html" %}
     {% block js %}
-    <script>src="static/js/jquery-3.3.1.min.js"</script>
-    <script>src="static/js/bootstrap.min.js"</script>
-    <script>src="static/js/bootstrap.bundle.min.js"</script>
+    <!--script>src="static/js/jquery-3.3.1.min.js"</script-->
+    <!--script>src="static/js/bootstrap.min.js"</script-->
+    <!--script>src="static/js/bootstrap.bundle.min.js"</script-->
     {% endblock %}
   </footer>
 </body>

@@ -1,15 +1,23 @@
-<nav class="navbar navbar-dark bg-success border-bottom border-light">
+<nav class="navbar is-success">
   <div class="container">
-    <div class="navbar-header">
+    <div class="navbar-brand">
       <a class="" href="{{ url_for('index') }}">
         <!--img alt="Brand" src="/static/img/logo.jpg"-->
         <img src="https://avatars2.githubusercontent.com/u/13577926?s=460&v=4" width="50" height="50" alt="Brand">
       </a>
     </div>
-    <div class="navbar-right"></div>
-      <a href="{{ url_for('index') }}">  <h1 class="start2p navbar-text"><img src="static/img/mando.png" class="iconsP" alt="">{{webTitle}}</h1></a>
-    
-   
+    <div class=" navbar-menu">
+
+    </div>
+    <div class="navbar-item">
+      <a href="{{ url_for('index') }}" class="">  
+        <h1 class="start2p title is-1">{{webTitle}}</h1>
+      </a>
+    </div>
+    <div class="">
+        <a href="{{ url_for('index') }}" class="is-success"> 
+          <img src="static/img/mando.png" class="iconsP" alt="">
+        </a>
     </div>
 
   </div>
