@@ -3,28 +3,34 @@
 Post | {{ super() }}
 {% endblock %}
 {% block content %}
-<div class="sourceCode container-fluid">
+<div class="sourceCode section">
     <div class="columns">
-        <div class="column is-narrow menu">
-            <div class="start2p  column is-12 menu-list">
-                <a href="{{ url_for('index') }}" class="">
-                    <img src="static/img/disk.png" class="iconsP" alt=""><span class="textoVerde start2p">Home</span>  
+        <div class="column is-narrow panel">
+            <div class=" column ">
+                <h3 class="textoVerde start2p title is-5"></h3>
+            </div>
+            <div class="start2p  column is-12 negro bordeVerde">
+                <a href="{{ url_for('index') }}" class="panel-block bordeVerde">
+                    <img src="static/img/disk.png" class="iconsP panel-icon" alt=""><span class="textoVerde start2p">Home</span>  
                 </a>
-                <a href="{{ url_for('blog') }}" class="">
-                    <img src="static/img/paper.png" class="iconsP" alt=""><span class="textoVerde start2p">Blog</span>  
+                <a href="{{ url_for('blog') }}" class="panel-block bordeVerde">
+                    <img src="static/img/paper.png" class="iconsP panel-icon" alt=""><span class="textoVerde start2p">Blog</span>  
                 </a>
-                <a href="{{ url_for('about') }}" class="">
-                    <img src="static/img/gosht.png" class="iconsP" alt=""><span class="textoVerde start2p">About</span>
+                <a href="{{ url_for('about') }}" class="panel-block bordeVerde">
+                    <img src="static/img/gosht.png" class="iconsP panel-icon" alt=""><span class="textoVerde start2p">About</span>
                 </a>
             </div>
             
         </div>
 
         <div class="column is-8">
-            <div class="column is-offset-5">
+            <div class="negro bordeVerde">
+            <div class="column textoCentrado">
                 <h3 class="textoVerde start2p title is-4">Post</h3>
             </div>
-            <div class="column card grisClaro">
+            </div>
+            <div class="column"></div>
+            <div class="column card grisClaro bordeVerde">
                 <div class="start2p card-header">
                     <p class="card-header-title is-centered">
                     {{ post["header"]["title"] }}

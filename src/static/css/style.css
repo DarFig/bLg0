@@ -1,67 +1,31 @@
-
-.sourceCode {
-    font-family: 'Source Code Pro', monospace;
-}
-.start2p {
-    font-family: 'Press Start 2P', cursive;
-}
-.firaCode {
-    font-family: 'Fira Code', monospace;
-}
-
+.sourceCode {font-family: 'Source Code Pro', monospace;}
+.start2p {font-family: 'Press Start 2P', cursive;}
+.firaCode {font-family: 'Fira Code', monospace;}
 .iconsP {
     height:64px;
     width: 64px;
-
 }
-
 .imgP {
     height:128px;
     width: 128px; 
     margin-left: 20px;
 }
+.negro{background-color: #2d2d2d;}
+.grisOscuro{background-color: #777c85;}
+.grisClaro{ background-color: #b3b9c5;}
+.blanco{background-color: #ffffff;}
+.rojo{ background-color: #f2777a;}
+.naranja{ background-color: #fca369;}
+.amarillo{ background-color: #ffd479;}
+.amarilloClaro{background-color:#ffeea6; }
+.verde{background-color: #92d192;}
+.azul{background-color:#6AB0F3; }
+.azulClaro{background-color:#76d4d6; }
+.purpura{background-color:#e1a6f2; }
+.marron{background-color:#ac8d58; }
 
-.negro{
-    background-color: #2d2d2d;
-}
- 
- .grisOscuro{
-    background-color: #777c85;
-}
-.grisClaro{
-    background-color: #b3b9c5;
-}
-.blanco{
-    background-color: #ffffff;
-}
-.rojo{
-    background-color: #f2777a;
-}
-.naranja{
-    background-color: #fca369;
-}
-.amarillo{
-    background-color: #ffd479;
-}
-.amarilloClaro{
-    background-color:#ffeea6; 
-}
-.verde{
-    background-color: #92d192;
-}
-.azul{
-    background-color:#6AB0F3; 
-}
-.azulClaro{
-    background-color:#76d4d6; 
-}
-.purpura{
-    background-color:#e1a6f2; 
-}
-.marron{
-    background-color:#ac8d58; 
-}
+.textoVerde{color: #92d192;}
+.textoCentrado{text-align: center;}
 
-.textoVerde{
-    color: #92d192;
-}
+.bordeRojo{ border:1px solid #f2777a; }
+.bordeVerde{ border:1px solid #92d192; }
