@@ -2,8 +2,4 @@ Flask
 flask_login
 Flask-WTF
 WTForms
-pymysql
-Flask-SQLAlchemy
-SQLAlchemy
-flask-mysql
-pymysql
+
